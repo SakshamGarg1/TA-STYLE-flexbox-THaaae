@@ -5,4 +5,222 @@
 
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper.
--->sks
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/df2423167d.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <header id="top" class="header">
+        <div class="container  ">
+            <a class="brand" href="#">
+                <img src="assets/ojrud4mfodxokquwhugm.png" alt="logo" width="150px" height="70px">
+            </a>
+        </div>
+            <nav class="nav">
+                <a href="#">HOME </a>
+                <a class="green" href="#">GALLERY </a>
+                <a href="#">ABOUT</a>
+
+            </nav>
+        
+    </header>
+    <main>
+        
+        <!-- Gallery -->
+        <section class="gallery">
+        <div class="container ">
+            <div class="col-1-3">
+                <img src="assets/01.png" alt="room">
+            </div>
+            <div class="col-1-3">
+                <img src="assets/02.png" alt="ladybug">
+            </div> <div class="col-1-3">
+                <img src="assets/03.png" alt="lady">
+            </div> 
+        </div>
+        <div class="container">
+            
+            <div class="col-1-3">
+                <img src="assets/04.png" alt="fcb">
+            </div> <div class="col-1-3">
+                <img src="assets/05.png" alt="bloom">
+            </div> 
+            <div class="col-1-3">
+                <img src="assets/06.png" alt="room2">
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="">
+            <nav>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                
+            </nav>
+        </div>
+    </footer>
+  
+    </main>
+</body>
+</html>
+
+
+
+/*css/*
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* my code starts here */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+	display: flex;
+}
+
+.header{
+	background-color: #223969;
+	padding: 16px 0;
+	height: 72px;
+	position: fixed;
+	width: 100%;
+}
+.brand{
+	padding: 0px;
+	margin: -46px;
+}
+.nav{
+	display:flex;
+    justify-content: flex-end;
+	margin-right: 31px;
+	margin: -54px 42px;
+
+}
+.brand img{
+	vertical-align: top;
+	
+} 
+.green{
+	color: green;
+}
+.nav a{
+	font-size: 20px;
+	color: azure;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 32px;
+} 
+/* article */
+.article{ 
+	background-color: aliceblue;
+	padding:80px 0 ;
+
+}
+.article-heading{
+	font-size:40px;
+}
+.article-text{
+	font-size: 17px;
+	line-height: 1.7;
+}
+.col{
+	float:left;
+	width: 50%;
+}
+.article-col-left{
+	padding-left: 60px;
+}
+/* gallary */
+.gallery{
+	padding: 80px 0;
+}
+.col-1-3{
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	margin: 1.5%;
+}
+.gallery img{
+	width: 100%;
+	height: 270px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.footer{
+	background-color: #223969;
+	padding: 32px 0px;
+	text-align: center; 
+	padding: 18px 530px 25px 0px; 
+	
+
+}
+.footer a{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin: 0 16px;
+	vertical-align: middle;
+}
+
